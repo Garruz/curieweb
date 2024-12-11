@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curie Web</title>
+        <link rel="stylesheet" href="static/css/output.css" type="text/css"> <!-- We add the output Tailwind CSS here -->
+    </head>
+
+    <body class="flex flex-col min-h-screen">
+
+        <header>
+
+            <nav class="navbar bg-primary">
+                <!-- Espacio izquierdo inicio-->
+                <div class="navbar-start">
+                    <a class="btn btn-ghost text-xl">Logo</a>
+                </div>
+                <!-- Espacio izquierdo fin-->
+
+                <!-- Espacio centro inicio-->
+                <div class="navbar-center">
+                    <div class="hidden lg:flex"> <!-- Aparece en lg -->
+
+                        <div class="dropdown dropdown-end">
+                            <div tabindex="0" role="button" class="btn btn-primary">
+                                Escuela
+                            </div>
+                            <ul tabindex="0" class="menu dropdown-content bg-neutral text-neutral-content rounded-box w-40">
+                                <li><a>Niveles Educativos</a></li>
+                                <li><a>Actividades</a></li>
+                                <li><a>Ex-Alumnos</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="dropdown dropdown-end">
+                            <div tabindex="0" role="button" class="btn btn-primary">
+                                Noticias y Galerias
+                            </div>
+                            <ul tabindex="0" class="menu dropdown-content bg-neutral text-neutral-content rounded-box w-40">
+                                <li><a>Destacados</a></li>
+                                <li><a>Noticias</a></li>
+                                <li><a>Vida Curie</a></li>
+                                <li><a>Galerias</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="dropdown dropdown-end">
+                            <div tabindex="0" role="button" class="btn btn-primary">
+                                Información
+                            </div>
+                            <ul tabindex="0" class="menu dropdown-content bg-neutral text-neutral-content rounded-box w-52">
+                                <li><a>Inscripción</a></li>
+                                <li><a>Centro de Recursos para la Carrera</a></li>
+                                <li><a>Cafeteria</a></li>
+                                <li><a>Calendario</a></li>
+                                <li><a>Materiales Escolares</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="dropdown dropdown-end">
+                            <div tabindex="0" role="button" class="btn btn-primary">
+                                Nosotros
+                            </div>
+                            <ul tabindex="0" class="menu dropdown-content bg-neutral text-neutral-content rounded-box w-40">
+                                <li><a>Acerca de Curie</a></li>
+                                <li><a>Filosofía</a></li>
+                                <li><a>Historia</a></li>
+                            </ul>
+                        </div>
+
+                        <button class="btn btn-primary"><a>Contacto</a></button>
+                    
+                    </div>
+                </div>
+                <!-- Espacio centro fin-->
+
+                <!-- Espacio derecha inicio-->
+                <div class="navbar-end">
+
+                    <div class="hidden lg:flex"> <!-- Aparece en lg -->
+                        <label class="btn btn-ghost cursor-pointer gap-2">
+                            
+                            <!-- icono de sol fin--> 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+                            </svg>
+                            <!-- icono de sol fin--> 
+
+                            <input type="checkbox" value="oscuro" class="toggle theme-controller"/>
+                            
+                            <!-- icono de luna fin--> 
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z" clip-rule="evenodd" />
+                            </svg>                              
+                            <!-- icono de luna fin-->
+
+                        </label>
+
+                        
+                        <div class="dropdown dropdown-end">
+                            <div tabindex="0" role="button" class="btn btn-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                    <path fill-rule="evenodd" d="M11 5a.75.75 0 0 1 .688.452l3.25 7.5a.75.75 0 1 1-1.376.596L12.89 12H9.109l-.67 1.548a.75.75 0 1 1-1.377-.596l3.25-7.5A.75.75 0 0 1 11 5Zm-1.24 5.5h2.48L11 7.636 9.76 10.5ZM5 1a.75.75 0 0 1 .75.75v1.261a25.27 25.27 0 0 1 2.598.211.75.75 0 1 1-.2 1.487c-.22-.03-.44-.056-.662-.08A12.939 12.939 0 0 1 5.92 8.058c.237.304.488.595.752.873a.75.75 0 0 1-1.086 1.035A13.075 13.075 0 0 1 5 9.307a13.068 13.068 0 0 1-2.841 2.546.75.75 0 0 1-.827-1.252A11.566 11.566 0 0 0 4.08 8.057a12.991 12.991 0 0 1-.554-.938.75.75 0 1 1 1.323-.707c.049.09.099.181.15.271.388-.68.708-1.405.952-2.164a23.941 23.941 0 0 0-4.1.19.75.75 0 0 1-.2-1.487c.853-.114 1.72-.185 2.598-.211V1.75A.75.75 0 0 1 5 1Z" clip-rule="evenodd" />
+                                </svg>                                  
+                                Languaje
+                            </div>
+                            <ul tabindex="0" class="menu dropdown-content bg-neutral text-neutral-content rounded-box">
+                                <li><a>Ingles</a></li>
+                                <li><a>Español</a></li>
+                                <li><a>Frances</a></li>
+                            </ul>
+                        </div>
+
+                        <button class="btn btn-accent"><a>Login</a></button>
+
+                    </div>
+
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <!-- icono de menu inicio-->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                            </svg>
+                            <!-- icono de menu fin--> 
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Espacio derecha fin-->
+
+            </nav>
+
+        </header>
+        
+        <main class="flex-grow">
+            {% block contenido %}
+            {% endblock %}
+        </main>
+
+        <footer class="footer bg-base-content text-base-100 p-10">
+            <aside>
+                <img width="30%" src="../../static/image/logoen.svg" />
+                <p>Universal School Pierre and Marie Curie</p>
+                <p>Science - Art - Humanism</p>
+            </aside>
+
+            <nav>
+                <h6 class="footer-title">Social Networks</h6>
+                <div class="grid grid-flow-col gap-2">
+                    
+                                        <!-- Facebook -->
+                    <span class="[&>svg]:h-5 [&>svg]:w-5">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 320 512">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                        <path
+                            d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                        </svg>
+                    </span>
+                    
+                    <!-- Instagram -->
+                    <span class="[&>svg]:h-5 [&>svg]:w-5">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor"
+                        viewBox="0 0 448 512">
+                        <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+                        <path
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                    </span>
+
+                </div>
+            </nav>
+
+            <nav>
+                <h6 class="footer-title">Contact Information</h6>
+                <a class="link link-hover">+(505) 2276 1555</a>
+                <a class="link link-hover">+(505) 2276 1611</a>
+                <a class="link link-hover">+(505) 8768 5858</a>
+            </nav>
+        </footer>
+
+    </body>
+</html>
