@@ -13,7 +13,7 @@ module.exports = {
       {
         claro: {
           "primary": "#29633a",
-          "primary-content": "#ffd700",
+          "primary-content": "#c0c0c0",
           
           "secondary": "#202020",
           "secondary-content": "#ffd700",
@@ -47,7 +47,7 @@ module.exports = {
         },
         oscuro: {
           "primary": "#29633a",
-          "primary-content": "#ffd700",
+          "primary-content": "#c0c0c0",
           
           "secondary": "#c0c0c0",
           "secondary-content": "#202020",

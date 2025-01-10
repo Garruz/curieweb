@@ -6,15 +6,21 @@
         <title>Curie Web</title>
         <link rel="stylesheet" href="static/css/output.css" type="text/css"> <!-- We add the output Tailwind CSS here -->
     </head>
+    <!--
+        <body class="flex flex-col min-h-screen">
+    -->
+            <body class="flex flex-col min-h-screen">
 
-    <body class="flex flex-col min-h-screen">
+        <header class="z-30 w-full" style="position: sticky; top: 0;">
 
-        <header>
-
-            <nav class="navbar bg-primary">
+            <nav class="navbar bg-primary h-20">
                 <!-- Espacio izquierdo inicio-->
                 <div class="navbar-start">
-                    <a class="btn btn-ghost text-xl">Logo</a>
+                        <img width="60rem" src="../../static/image/logos/logoen.svg" />
+                        <div class="invisible lg:visible" style="color: white">
+                            <p>Universal School Pierre and Marie Curie</p>
+                            <p>Science - Art - Humanism</p>
+                        </div>
                 </div>
                 <!-- Espacio izquierdo fin-->
 
@@ -71,6 +77,39 @@
 
                         <button class="btn btn-primary"><a>Contacto</a></button>
                     
+                    </div>
+                    
+                    <div class="lg:hidden"> <!-- Aparece en sm -->
+                        <label class="swap swap-rotate" tabindex="0" role="button" >
+                            <input type="checkbox" value="oscuro" class="theme-controller"/>
+                            <!-- icono de sol fin--> 
+                            <svg class="swap-off h-10 w-10 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                <path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+                            </svg>
+                            <!-- icono de sol fin-->
+                            <!-- icono de luna fin--> 
+                            <svg class="swap-on h-10 w-10 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z" clip-rule="evenodd" />
+                            </svg>                              
+                            <!-- icono de luna fin-->
+                        </label>
+
+                        
+                        <div class="dropdown dropdown-end">
+                            <div tabindex="0" role="button" class="btn btn-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4">
+                                    <path fill-rule="evenodd" d="M11 5a.75.75 0 0 1 .688.452l3.25 7.5a.75.75 0 1 1-1.376.596L12.89 12H9.109l-.67 1.548a.75.75 0 1 1-1.377-.596l3.25-7.5A.75.75 0 0 1 11 5Zm-1.24 5.5h2.48L11 7.636 9.76 10.5ZM5 1a.75.75 0 0 1 .75.75v1.261a25.27 25.27 0 0 1 2.598.211.75.75 0 1 1-.2 1.487c-.22-.03-.44-.056-.662-.08A12.939 12.939 0 0 1 5.92 8.058c.237.304.488.595.752.873a.75.75 0 0 1-1.086 1.035A13.075 13.075 0 0 1 5 9.307a13.068 13.068 0 0 1-2.841 2.546.75.75 0 0 1-.827-1.252A11.566 11.566 0 0 0 4.08 8.057a12.991 12.991 0 0 1-.554-.938.75.75 0 1 1 1.323-.707c.049.09.099.181.15.271.388-.68.708-1.405.952-2.164a23.941 23.941 0 0 0-4.1.19.75.75 0 0 1-.2-1.487c.853-.114 1.72-.185 2.598-.211V1.75A.75.75 0 0 1 5 1Z" clip-rule="evenodd" />
+                                </svg>                                  
+                                Lan
+                            </div>
+                            <ul tabindex="0" class="menu dropdown-content bg-neutral text-neutral-content rounded-box">
+                                <li><a>Ingles</a></li>
+                                <li><a>Español</a></li>
+                                <li><a>Frances</a></li>
+                            </ul>
+                        </div>
+
+                        <button class="btn btn-accent"><a>Login</a></button>
                     </div>
                 </div>
                 <!-- Espacio centro fin-->
@@ -133,14 +172,14 @@
 
         </header>
         
-        <main class="flex-grow">
+        <main class="z-20 flex flex-grow">
             {% block contenido %}
             {% endblock %}
         </main>
 
-        <footer class="footer bg-base-content text-base-100 p-10">
+        <footer class="footer bg-base-content text-base-100 p-10 z-10">
             <aside>
-                <img width="30%" src="../../static/image/logoen.svg" />
+                <img width="30%" src="../../static/image/logos/logoen.svg" />
                 <p>Universal School Pierre and Marie Curie</p>
                 <p>Science - Art - Humanism</p>
             </aside>
