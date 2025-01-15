@@ -3,7 +3,10 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return render(request, 'website/index.html')
+    return render(request, "website/index.html")
+
+def levels(request):
+    return render(request, "website/levels.html")
 
 def home(request):
     photo_data = {
